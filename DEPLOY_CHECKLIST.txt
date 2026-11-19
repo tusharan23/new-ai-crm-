@@ -1,0 +1,13 @@
+AI SALES CRM: WEBSITE DEPLOYMENT CHECKLIST
+
+[ ] Unzip AI-Sales-CRM-Ready-to-Deploy.zip
+[ ] Make a GitHub repository, then upload files/folders from the unzipped folder
+[ ] Go to https://share.streamlit.io/ and choose the repo
+[ ] Main file path: app.py
+[ ] Advanced settings > Secrets:
+       GEMINI_API_KEY = "YOUR_KEY"
+       APP_PASSWORD = "YOUR_PASSWORD"    # optional
+[ ] Deploy, then copy your streamlit.app URL
+
+Never place your actual key in GitHub.
+Runtime lead data may disappear on restart. Use only demo data until connected to persistent storage.
