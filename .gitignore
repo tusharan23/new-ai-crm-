@@ -1,0 +1,14 @@
+# API keys / passwords must never be committed
+.env
+.streamlit/secrets.toml
+
+# Runtime data contains customer information and is not source code
+runtime_data/
+activity_log.txt
+
+# Python / OS artifacts
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+venv/
