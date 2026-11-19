@@ -2,22 +2,6 @@
 
 A Python + Streamlit CRM web app using Google Gemini to extract leads from meeting notes, recommend follow-ups, show sales pipeline charts, and draft customer emails.
 
-**This folder is ready to deploy to Streamlit Community Cloud.** It is not a static HTML website. Streamlit hosts both its browser UI and Python code in one application.
-
-## Deploy to a shareable URL (without using the terminal)
-
-1. Sign into [GitHub](https://github.com/) and create a new repository, e.g. `ai-sales-crm-demo`.
-2. Upload the **uncompressed contents of this folder** to the repository, preserving `app.py`, `requirements.txt`, `datastore/`, and `.streamlit/`. Do not upload this ZIP as a single file.
-3. Visit [Streamlit Community Cloud](https://share.streamlit.io/) and sign in with GitHub.
-4. Select **Create app / Deploy**, choose your repository and branch, and set the **main file path** to `app.py`.
-5. In **Advanced settings -> Secrets**, paste:
-   ```toml
-   GEMINI_API_KEY = "YOUR_ACTUAL_GEMINI_KEY"
-   APP_PASSWORD = "YOUR_PRIVATE_DEMO_PASSWORD"
-   ```
-   The password is optional if you want a public, shared demonstration. The AI key is necessary for AI features. Never upload keys or passwords to GitHub.
-6. If prompted, choose Python **3.11**. Click **Deploy** and then copy the generated `https://<your-subdomain>.streamlit.app` link.
-
 ### Getting the Gemini key
 
 Generate a key through [Google AI Studio](https://aistudio.google.com/apikey). API usage may have quota or billing limitations.
